@@ -13,13 +13,13 @@ public class DiscountServiceTest {
 
     @BeforeEach
     void setUp() {
-        discountService = new DiscountService();
+        discountService = new DiscountService(); // Inicializamos el servicio de descuentos antes de cada prueba
     }
 
     @Test
     @DisplayName("Calcular descuento en monto mayor a 100.000 -> 15% de descuento")
     void testCalcularDescuentoEnMontoMayorA100000() {
-        // Arrange
+        // Arrange o preparación
         double monto = 120000;
         double descuentoEsperado = monto * 0.85; // 15% de descuento
         // Act
